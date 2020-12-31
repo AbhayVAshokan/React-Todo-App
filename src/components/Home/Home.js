@@ -1,7 +1,25 @@
+import TodoList from "../TodoList/TodoList";
+import SideBarLeft from "../SideBarLeft/SideBarLeft";
+import SideBarRight from "../SideBarRight/SideBarRight";
+
+const styles = {
+  wrapper: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    height: "100vh",
+    width: "100vw",
+  },
+}
+
 const Home = () => {
-    return (
-        <h1>Todo Application</h1>
-    );  
+  return (
+    <div style={styles.wrapper}>
+      <SideBarLeft />
+      <TodoList />
+      <SideBarRight />
+    </div>
+  );
 }
 
 export default Home;
