@@ -5,7 +5,9 @@ const styles = {
   wrapper: {
     backgroundColor: "#e8e8e8",
     borderRadius: "10px",
-    paddingBottom: "0.5rem"
+    paddingBottom: "0.5rem",
+    marginBottom: "1rem",
+    borderRadius: "20px"
   },
   blockCard: {
     display: "flex",

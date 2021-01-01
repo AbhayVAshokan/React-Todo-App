@@ -1,9 +1,12 @@
 const styles = {
   wrapper: {
-    display: "sticky",
+    display: "block",
+    top: "0",
+    position: "sticky",
     width: "calc(min(30vw, 600px))",
-    height: "100vh",
+    height: "100%",
     borderLeft: "2px solid rgba(176, 176, 176, 0.25)",
+    backgroundColor: "white"
   }
 }
 

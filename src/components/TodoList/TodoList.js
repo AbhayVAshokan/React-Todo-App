@@ -7,8 +7,7 @@ const styles = {
     flexDirection: "column",
     height: "100%",
     width: "100%",
-    backgroundColor: "#f0f0f0",
-    padding: "2.5%"
+    padding: "2.5%",
   },
   addTaskBtn: {
     display: "flex",

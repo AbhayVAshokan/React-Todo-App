@@ -7,8 +7,9 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    height: "100vh",
-    width: "100vw",
+    height: "100%",
+    width: "100%",
+    backgroundColor: "#f5f5f5"
   },
 }
 
