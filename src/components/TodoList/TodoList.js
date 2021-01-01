@@ -19,6 +19,7 @@ const styles = {
     height: "2.5rem",
     color: "rgb(158, 158, 158)",
     fontWeight: "500",
+    padding: "1rem 0 0 0"
   },
   plus: {
     border: "2px solid rgba(158, 158, 158, 0.5)",
@@ -90,10 +91,10 @@ const TodoList = () => {
   return (
     <div style={styles.wrapper}>
       <TopBar />
-      <p style={styles.addTaskBtn}>
+      <div style={styles.addTaskBtn}>
         <p style={styles.plus}>+</p>
-      Add a task
-      </p>
+        <p>Add a task</p>
+      </div>
 
       <div>
         <BlockCard time={Date.now()} title={"App Related Works"} tasks={dummyTasks[0]} />

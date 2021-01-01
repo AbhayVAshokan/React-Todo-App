@@ -78,7 +78,7 @@ const ItemCard = ({ task }) => {
           </div>
         </div>
         <div>
-          <p style={styles.appName}>{task.appName} <div style={{ ...styles.coloredBox, backgroundColor: task.color }} /></p>
+          <div style={styles.appName}>{task.appName} <div style={{ ...styles.coloredBox, backgroundColor: task.color }} /></div>
           <div></div>
         </div>
       </div>

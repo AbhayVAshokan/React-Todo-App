@@ -4,7 +4,6 @@ import ItemCard from "../ItemCard/ItemCard";
 const styles = {
   wrapper: {
     backgroundColor: "#e8e8e8",
-    borderRadius: "10px",
     paddingBottom: "0.5rem",
     marginBottom: "1rem",
     borderRadius: "20px"
@@ -52,18 +51,18 @@ const BlockCard = (props) => {
     <div style={styles.wrapper}>
       <div style={styles.blockCard}>
         <img src={LightningIcon} style={styles.lightningIcon} alt="lightning icon" />
-        <p style={styles.title}>{props.title}</p>
-        <p style={styles.tasks}>
+        <div style={styles.title}>{props.title}</div>
+        <div style={styles.tasks}>
         {props.tasks.length} tasks
           <div style={styles.tasksArrow}>
             <div style={styles.arrowPart} />
             <div style={{...styles.arrowPart, ...styles.arrowRight}} />
           </div>
-        </p>
+        </div>
       </div>
       {
         props.tasks.map((task, key) => {
-          return <ItemCard task={task}/>
+          return <ItemCard key={key} task={task}/>
         })
       }
     </div>

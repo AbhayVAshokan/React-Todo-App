@@ -21,7 +21,7 @@ const styles = {
   navArrow: {
     height: "15px",
     fill: "red",
-    margin: "10px",
+    margin: "-5px 10px 10px 10px",
   },
   arrowRight: {
     transform: "scaleX(-1)"
